@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login Page</title>
+
+        <link rel="stylesheet" href="C:\Users\Bango\Desktop\login\login\style.css" type="text/css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <!-- Background Effect -->
+        <div class="stars"></div>
+        <div class="twinkling"></div>
+        <!-- END -->
+
+        <!-- Start of Login Form -->
+        <div class="form">
+        <form class="login-form" action="" method="POST">
+
+            <input class="user-input" type="text" name="" placeholder="Username" required>
+            <input class="user-input" type="password" name="" placeholder="Password" required>
+
+            <div class="options-01">
+                <label class="remember"><input type="checkbox" name=""> Remember me</label>
+                <a href="#">Forgot Password?</a>
+            </div>
+            <input class="btn" type="submit" value="Login">
+
+            <div class="options-02">
+                <p>Not Registered? <a href="#">Sign up now!</a></p>
+            </div>
+        
+        </form>
+        <!-- End of Login Form -->
+
+        <!-- Start of Sign up form -->
+        <form class="signup-form" action="" method="POST">
+            <input class="user-input" type="text" name="" placeholder="Username" required>
+            <input class="user-input" type="email" name="" placeholder="Email Address" required>
+            <input class="user-input" type="password" name="" placeholder="Password" required>
+            <input class="btn" type="submit" value="Sign Up">
+            <div class="options-02">
+                <p>Already Registered? <a href="#">Login now!</a></p>
+            </div>
+        </div>
+        </form>
+    
+        <!-- End of Sign up form -->
+
+
+
+        <!-- Toggle Effect Script -->
+
+        <script type="text/javascript">
+        $('.options-02 a').click(function(){
+            $('form').animate({
+                height: "toggle", opacity: "toggle"
+            }, "slow");
+        });
+
+        </script>
+
+        <!-- END -->
+
+    </body>
+</html>
